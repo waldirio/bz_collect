@@ -12,9 +12,9 @@ from postgres import Postgres
 URL = "https://bugzilla.redhat.com/rest/bug?"
 # URL_AUX="https://bugzilla.redhat.com/rest/bug?id=1771508,1209702"
 URL_AUX = "https://bugzilla.redhat.com/rest/bug?product=Red Hat Satellite 6&status=all closed&version=6.7.0"
-SAT_65 = "%sproduct=Red Hat Satellite 6&status=all open,all closed&version=6.5.0" % URL
-SAT_66 = "%sproduct=Red Hat Satellite 6&status=all open,all closed&version=6.6.0" % URL
-SAT_67 = "%sproduct=Red Hat Satellite 6&status=all open,all closed&version=6.7.0" % URL
+SAT_65 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.5.0" % URL
+SAT_66 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.6.0" % URL
+SAT_67 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.7.0" % URL
 
 TODAY = date.today()
 TODAY_STR = TODAY.strftime("%Y-%m-%d")
