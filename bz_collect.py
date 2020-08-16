@@ -15,6 +15,8 @@ URL_AUX = "https://bugzilla.redhat.com/rest/bug?product=Red Hat Satellite 6&stat
 SAT_65 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.5.0" % URL
 SAT_66 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.6.0" % URL
 SAT_67 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.7.0" % URL
+SAT_68 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=6.8.0" % URL
+SAT_70 = "%sproduct=Red Hat Satellite&status=all open,all closed&version=7.0.0" % URL
 
 TODAY = date.today()
 TODAY_STR = TODAY.strftime("%Y-%m-%d")
@@ -109,7 +111,7 @@ def main():
     of Satellite 6.5, 6.6 and 6.7
     """
 
-    for sat_ver in [SAT_65, SAT_66, SAT_67]:
+    for sat_ver in [SAT_65, SAT_66, SAT_67, SAT_68, SAT_70]:
     # for sat_ver in [URL_AUX]:
         print("Collecting from: {}".format(sat_ver))
         obj = query(sat_ver)
