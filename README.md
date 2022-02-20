@@ -15,7 +15,7 @@ About the use, please, proceed as below
  ```
  $ ./bz_collect
  ```
- and it will result in a output as below
+ and it will result in an output as below
  ```
  #######################
 # 1. List all the Products available on BugZilla
@@ -89,8 +89,9 @@ saving the file
 Done, file 'Gofer.csv' created.
 press any key to continue
 ```
+Note. If you would like to export data about a different product, just type `2` once again, type the code and press enter.
 
-Great, at this moment, a file with the product name will be created. Here we can see Gofer.csv and checking the content of this file, we can see some fields. Below it's an example.
+Great, at this moment, a file with the product name will be created. Here we can see `Gofer.csv` and checking the content of this file, we can see some fields. Below it's an example.
 ```
 $ cat Gofer.csv 
 load_data,bz_id,product,component,status,resolution,summary,version,keywords,creator,severity,create_time,close_time,customer_case_attached
